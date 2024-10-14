@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sidebar-css.css" />
+    <title>Title of your HTML page</title>
+  </head>
+  <body>
+    <main>
+      <article>
+        <h1>Main Content Title</h1>
+        <p>
+          This is a sample paragraph with a footnote reference<sup id="fnref1"
+            ><a href="#footnote1" class="footnote-toggle">[1]</a></sup
+          >.
+        </p>
+        <!-- More content -->
+      </article>
+    </main>
+
+    <aside id="footnote-sidebar">
+      <h2>Footnotes</h2>
+      <div id="footnote-content">
+        <div class="footnote-item" id="footnote1">
+          <p>
+            1. This is the content of the first footnote.
+            <a href="#fnref1">↩</a>
+          </p>
+        </div>
+        <!-- More footnotes -->
+      </div>
+    </aside>
+
+    <script src="footnote-sidebar.js"></script>
+  </body>
+</html>
