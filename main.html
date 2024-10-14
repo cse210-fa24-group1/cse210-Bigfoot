@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bigfoot Example</title>
+    <link rel="stylesheet" type="text/css" href="bigfoot/dist/bigfoot-default.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="bigfoot/dist/bigfoot.min.js"></script>
+</head>
+<body>
+    <p>
+        This is an example of a paragraph that includes a footnote.
+        <sup id="fnref:1">
+            <a href="#fn:1" rel="footnote">1</a>
+        </sup>
+    </p>
+    <div class="footnotes">
+        <ol>
+            <li id="fn:1">
+                This is the footnote content.
+            </li>
+        </ol>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $.bigfoot({actionOriginalFN: "hide"});
+        });
+        </script>        
+</body>
+</html>
+
