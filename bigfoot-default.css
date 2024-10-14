@@ -1,24 +1,21 @@
 .bigfoot-footnote__button {
-  position: relative;
-  z-index: 5;
-  top: -0.1em;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  display: inline-block;
-  padding: 0.35em;
-  margin: 0 0.1em 0 0.2em;
-  border: none;
-  border-radius: 0.3em;
-  cursor: pointer;
-  background-color: rgba(110, 110, 110, 0.2);
-  -webkit-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
-  font-size: 1rem;
-  line-height: 0;
-  vertical-align: middle;
+  width: 20px; /* Set the width of the button */
+  height: 20px; /* Set the height of the button */
+  line-height: 20px; /* Adjust the line height to vertically center the content */
+  text-align: center; /* Center the text horizontally */
+  border-radius: 50%; /* Make it circular */
+  background-color: rgba(110, 110, 110, 0.2); /* Adjust background color */
+  color: #6e6e6e; /* Color of the text or icon inside the button */
+  font-size: 18px; /* Increase the font size if you want to use text or an icon */
+  display: flex;
   text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  position: relative; 
   -webkit-font-smoothing: antialiased;
   -webkit-transition-property: background-color;
   transition-property: background-color;
@@ -42,22 +39,12 @@
   transition-delay: 0.1s;
 }
 
-.bigfoot-footnote__button:after {
-  content: '';
-  display: table;
+.bigfoot-footnote__button::before {
+  content: "i";
+  display: block;
   clear: both;
-}
-
-.bigfoot-footnote__button__circle {
-  display: inline-block;
-  width: 0.25em;
-  height: 0.25em;
-  margin-right: 0.25em;
-  float: left;
-}
-
-.bigfoot-footnote__button__circle:last-child {
-  margin-right: 0;
+  font-style: normal; /* Correct any font styling issues */
+  font-weight: bold; /* Optional: Makes the 'i' bold */
 }
 
 .bigfoot-footnote__container {
